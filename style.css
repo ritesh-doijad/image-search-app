@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#D8E7EA;
+    font-family: "Inter", sans-serif;
+}
+.container h1{
+    text-align: center;
+    margin-top:50px;
+    font-size: 50px;
+}
+.card{
+    border-radius: 7px;
+    width:320px;
+    height:100%;
+    margin: 25px;
+    box-shadow: 0px 0px 5px ;
+    padding: 5px;
+    overflow: hidden;
+    }
+.card img{
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+}
+
+.image-conatiner{
+    
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card a{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    font-weight: 350;
+    text-align: start;
+
+}
+.container form{
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    
+}
+#search-input{
+    height: 30px;
+    width: 25vw;
+    border-radius: 5px;
+}
+#search-btn{
+    cursor: pointer;
+    width: 60px;
+    border-radius: 5px;
+    background-color: #118065;
+    color: #fff;
+}
+#search-input::placeholder{
+  padding-left: 10px;
+   font-size: 15px;
+}
+#show-more-btn{
+    width: 90px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #118065;
+    color: #fff;
+    margin: 50px 0px 70px 0px;
+    cursor: pointer;
+    display: none;
+   
+}
+.show{
+   display: flex;
+   justify-content: center;
+}
+@media screen and (max-width:400px){
+    .container h1{
+        
+        font-size: 30px;
+    }
+    .card{
+        margin: 10px;
+        width:300px ;
+        }
+    .card img{
+       width: 100%;
+       height: 200px;
+    }
+    .image-conatiner{
+        margin:30px 11px 0 14px;
+        
+    }
+    #search-input{
+        height: 30px;
+        width: 100px;
+        border-radius: 5px;
+    }
+
+}
